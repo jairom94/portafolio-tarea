@@ -1,0 +1,138 @@
+.skills{
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: var(--bg-skills);
+    /* max-width: 50vw; */
+    /* padding-top: 90px; */
+
+    /* max-width: 100vh; */
+    /* max-height: 100vh; */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    /* background-color: yellowgreen; */
+}
+
+.skills > ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    width: 60vw;
+    max-width: 400px;
+    margin: 0 auto;
+    /* width: 60vw; */
+    /* max-width: 50vw; */
+    /* background-color: aqua; */
+    > .card-skill {        
+        min-width: 100px;
+        min-height: 100px;
+        border-radius: 10px;
+        background: #e0e0e0;
+        box-shadow: 15px 15px 30px #bebebe,
+                    -15px -15px 30px #ffffff;                
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    > li.tall{        
+        grid-row: span 2;            
+    }
+    > li.wide{
+        grid-column: span 2;
+    }
+}
+
+
+.progressbar{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;    
+    .cont-progress{        
+        border: 1px solid var(--primary-color);
+        border-radius: 5px;
+        .progress-90{
+            border-radius: inherit;
+            background-color: var(--secondary-color);
+            /* height: 10px; */
+            height: 20px;
+            width: 0;
+            animation: move-90 3s ease-in-out infinite;
+        }
+        .progress-80{
+            border-radius: inherit;
+            background-color: var(--secondary-color);
+            /* height: 10px; */
+            height: 20px;
+            width: 0;
+            animation: move-80 3s ease-in-out infinite;
+        }
+        .progress-60{
+            border-radius: inherit;
+            background-color: var(--secondary-color);
+            /* height: 10px; */
+            height: 20px;
+            width: 0;
+            animation: move-60 3s ease-in-out infinite;
+        }
+    }
+}
+.percenteje{
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 0.1rem .6rem;
+    width: fit-content;
+}
+
+.icon-skill{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    padding: .5rem;    
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes move-90 {
+    to {         
+        width: 90%;
+    }
+}
+@keyframes move-80 {
+    to {         
+        width: 80%;
+    }
+}
+@keyframes move-60 {
+    to {         
+        width: 60%;
+    }
+}
+.icon-md{
+    font-size: 3rem;
+    color: #bebebe;
+}
+.cont-icon-vue{
+    background-color: var(--primary-color);
+    padding: .5rem;
+    border-radius: 5px;
+    position: absolute;
+}
+.vue-icon{
+    font-size: 3rem;
+    color: #bebebe;
+}
+
+.p-4{
+    padding: 2rem;
+}
+
+.heading-6{
+    font-size: .6rem;
+    font-weight: 400;
+}

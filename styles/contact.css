@@ -1,0 +1,242 @@
+.contact {
+    height: 100vh;
+    max-height: 100vh;
+    background-color: var(--primary-color);
+    font-weight: 500;
+    font-size: .8rem;
+
+    >.cont-form {
+        /* background-color: aquamarine; */
+        width: 70vw;
+        max-width: 400px;
+        margin: 0 auto;
+        height: 100%;
+
+        >form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            gap: .8rem;
+
+            >div.cont-input {
+                display: grid;
+                grid-template-columns: 1fr;
+                .item{
+                    label{
+                        transition: all .8s ease;
+                    }
+                    &:focus-within label{
+                        color: var(--light-color);
+                    }
+                }
+            }
+
+            >div.cont-input>div,
+            fieldset {
+                display: flex;
+                flex-direction: column;
+
+                >input[type="text"],
+                input[type="tel"] {
+                    color: var(--light-color);
+                    font-size: .8em;
+                    letter-spacing: 1.2px;
+                    padding: .5rem;
+                    background-color: var(--primary-color);
+                    outline: none;
+                    border: none;
+                    border-bottom: 2px solid var(--secondary-color);
+                    transition: all .3s ease;
+                    &:focus{
+                        border-bottom: 2px solid var(--light-color);
+                    }                    
+                }
+
+                >label {
+                    color: var(--secondary-color);
+                    padding-top: .8rem;
+                }
+
+            }
+
+            >fieldset>legend {
+                color: var(--secondary-color);
+            }
+
+            >fieldset {
+                display: block;
+                padding: .5rem;
+                border: none;
+                &:focus-within legend{
+                    color: var(--light-color);
+                }
+                >div {
+                    width: 100%;
+                    padding: 0;
+
+                    >textarea {
+                        background-color: var(--primary-color);
+                        border: none;
+                        outline: none;
+                        border-radius: 5px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding: .5rem;
+                        display: block;
+                        resize: none;
+                        border: 2px solid var(--secondary-color);
+                        color: var(--light-color);
+                        transition: all .3s ease;
+                        &:focus{
+                            border: 2px solid var(--light-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.list-ad {
+    >ul {
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        >li {
+            display: flex;
+            position: relative;
+
+            >label {
+                /* background-color: yellowgreen; */
+                width: 160px;
+                color: var(--light-color);
+                cursor: pointer;
+            }
+
+            >input[type="radio"] {
+                opacity: 0;
+                /* display: none; */
+                cursor: pointer;
+                position: absolute;
+                display: block;
+                left: 160px;
+                width: 20px;
+                height: 20px;
+                top: 0;
+                z-index: 10;
+
+                ~span {
+                    display: flex;
+                    width: 20px;
+                    height: 20px;
+                    background-color: var(--secondary-color);
+                    position: relative;
+                    border-radius: 3px;
+                    justify-content: center;
+                    z-index: 5;
+
+                    &::before {
+                        content: "✓";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        opacity: 0;
+                        font-size: 0;
+                        transition: all .4s ease;
+                        z-index: 6;
+                    }
+                }
+
+                &:checked {
+
+                    /* opacity: 1; */
+                    ~span {
+                        &::before {
+                            opacity: 1;
+                            font-size: 2rem;
+                            top: -10px;
+                            color: var(--light-color);
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+div.cont-access {
+    /* background-color: yellow; */
+    display: flex;
+    gap: 10px;
+    color: var(--light-color);
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    >label{
+        cursor: pointer;
+    }
+    >div {
+        position: relative;
+        >input[type="checkbox"] {
+            cursor: pointer;
+            position: absolute;
+            z-index: 10;
+            width: 40px;
+            height: 20px;
+            opacity: 0;
+            +span {
+                position: relative;
+                display: block;
+                width: 40px;
+                height: 20px;
+                border-radius: 10px;
+                background-color: var(--secondary-color);                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background-color: var(--menu-color);
+                    border-radius: 50%;
+                    width: 20px;
+                    height: 20px;
+                    transition: all .3s ease;
+                }
+            }
+
+            &:checked {
+                +span {
+                    background-color: var(--warning-color);
+                    &::before {
+                        transform: translateX(100%);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (width > 768px) {
+    #cont-input {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .contact>.cont-form {
+        max-width: 600px;
+        /* background-color: yellow; */
+    }
+    div.cont-access{
+        justify-content: start;
+        padding-bottom: 1.3rem;
+    }
+
+}

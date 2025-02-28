@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <!-- Script CDN -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/skills.css">
+    <link rel="stylesheet" href="./styles/banner.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
+
+
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <div class="cont-header">
+        <header class="header">
+            <input type="checkbox" name="menu-checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" class="menu-btn">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="menu-hamburguesa">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="menu">
+                <div class="cont-links">
+                    <div class="logo">
+                        <img src="./assets/imgs/txtportafolio.png" alt="">
+                    </div>
+                    <ul>
+                        <li>
+                            <a class="btn-menu" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="btn-menu" href="#">About</a>
+                        </li>
+                        <li>
+                            <a class="btn-menu" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div class="ring"></div>
+        <div class="snap-center">
+            <section class="home" id="home">
+                <div class="cont-saludo">
+                    <h2 class="heading-4">Hola a todos, soy</h2>
+                    <h3 class="heading-2 pt-2">Jairo F.<br>Moreno Jurado</h3>
+                    <div class="cont-btns-bottom-saludo pt-4">
+                        <a class="btn btn-primary" href="#">Desarrollador Web</a>
+                        <a class="btn btn-primary" href="#">Contactame</a>
+                    </div>
+                </div>
+                <div class="cont-profile">
+                    <div class="profile">
+                        <div class="box"></div>
+                        <div class="circle"></div>
+                        <div class="textura">
+                            <img src="./assets/imgs/ptos-textura.png" alt="">
+                        </div>
+                        <picture>
+                            <img src="./assets/imgs/profile.png" alt="img profile">
+                        </picture>
+                    </div>
+                </div>
+                <div class="cont-btns-bottom-profile">
+                    <!-- <a class="btn btn-primary" href="#">Desarrollador Web</a>
+                    <a class="btn btn-primary" href="#">Contactame</a> -->
+                    <ul>
+                        <li>
+                            <a href="" class="btn btn-primary">Desarrollador Web</a>
+                        </li>
+                        <li>
+                            <a href="" class="btn btn-primary">Contactame</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+        </div>
+        <div class="snap-center">
+            <section class="about">
+                <div class="header-about">
+                    <h2>Hola, soy <br> Jairo Moreno</h2>
+                    <div class="cont-img-profile">
+                        <img src="./assets/imgs/profile-3.png" alt="">
+                    </div>
+                </div>
+                <div class="content-about">
+                    <div class="banner-about"></div>
+                    <div class="body-about">
+                        <p>Desarrollador web Full Stack, me apasiona el diseño web y debido a ello he enfocado mi tiempo
+                            para mejorar mis habilidades técnicas. <strong>Me mantengo en continuo aprendizaje para asi estar a la
+                                altura de las exigencias del cliente aprendiendo nuevas tecnologías y sus metodologías a fondo.</strong>
+                        </p>
+                        <!-- <p>Me comprometo a dar mi mayor esfuezo en cada proyecto y a presentar soluciones innovadoras
+                            con un interfaz amigable para el usuario y facel de manejar.
+                        </p> -->
+                    </div>
+                    <div class="footer-about">
+                        <a href="#">Contactar</a>
+                        <!-- <div class="circle-bottom-left">
+                        </div> -->
+                        <!-- <div class="icon-about">
+                            <iconify-icon icon="tabler:user-filled"></iconify-icon>
+                        </div> -->
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+        <div class="snap-center">
+            <section class="skills">
+                <!-- <ul>
+                    <li class="card-skill relative p-4">
+                        <div class="icon-skill">
+                            <iconify-icon icon="akar-icons:react-fill" class="icon-md"></iconify-icon>
+                        </div>
+                        <h4 class="heading-6 pb-2 pt-4">React JS</h4>
+                        <div class="progressbar">
+                            <div class="cont-progress">
+                                <div class="progress-60">
+                                </div>
+                            </div>
+                            <span class="percenteje">60%</span>
+                        </div>
+                    </li>
+                    <li class="card-skill relative p-4">
+                        <div class="icon-skill">
+                            <iconify-icon icon="akar-icons:vue-fill" class="icon-md"></iconify-icon>
+                        </div>
+                        <h4 class="heading-6 pb-2 pt-4">Vue JS</h4>
+                        <div class="progressbar">
+                            <div class="cont-progress">
+                                <div class="progress-80">
+                                </div>
+                            </div>
+                            <span class="percenteje">80%</span>
+                        </div>
+                    </li>
+                    <li class="card-skill relative p-4">
+                        <div class="icon-skill">
+                            <iconify-icon icon="bi:github" class="icon-md"></iconify-icon>
+                        </div>
+                        <h4 class="heading-6 pb-2 pt-4">Git, Github y GitLab</h4>
+                        <div class="progressbar">
+                            <div class="cont-progress">
+                                <div class="progress-90">
+                                </div>
+                            </div>
+                            <span class="percenteje">90%</span>
+                        </div>
+                    </li>
+                </ul> -->
+            </section>
+        </div>
+        <div class="snap-center">
+            <section class="banner">
+                <div class="image"></div>
+                <div class="text">
+                    <!-- <img src="./assets/imgs/banner-detail.png" alt=""> -->
+                    <div class="cont-icons">
+                        <div class="cont-ico desktop">
+                            <iconify-icon icon="material-symbols-light:developer-mode-tv-outline"></iconify-icon>
+                        </div>
+                        <div class="cont-ico movil">
+                            <iconify-icon icon="material-symbols-light:developer-mode-outline"></iconify-icon>
+                        </div>
+                    </div>
+                    <h2>Desarrollador Web</h2>
+                    <p>Desarrollador web Full Stack, creamos sitios web dinámicos y detallados.</p>
+                    <a href="#" class="btn">Contactar</a>
+                </div>
+
+            </section>
+        </div>
+        <div class="snap-center">
+            <section class="contact">
+                <div class="cont-form">
+                    <form action="">
+                        <div class="cont-input" id="cont-input">
+                            <div class="item">
+                                <label for="name">Nombre</label>
+                                <input type="text" required autocomplete="off" name="name" id="name"
+                                    placeholder="Pon tu nombre">
+                            </div>
+                            <div class="item">
+                                <label for="lastname" class="">Apellidos</label>
+                                <input type="text" required autocomplete="off" name="lastname" id="lastname"
+                                    placeholder="Pon tu apellido">
+                            </div>
+                            <div class="item">
+                                <label for="lastname" class="">Télefono</label>
+                                <input type="tel" required autocomplete="off" name="lastname" id="lastname"
+                                    placeholder="Pon tu télefono">
+                            </div>
+                            <div class="item">
+                                <label for="lastname" class="">Github username</label>
+                                <input type="text" required autocomplete="off" name="lastname" id="lastname"
+                                    placeholder="Con este formato (@<username>)" pattern="^@[^\s]+">
+                            </div>
+                        </div>
+                        <fieldset title="question" class="list-ad">
+                            <legend>¿Cómo me conociste?</legend>
+                            <ul>
+                                <li>
+                                    <label for="collegue">Universidad</label>
+                                    <input type="radio" name="ask" id="collegue">
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <label for="keepcoding">Keepcoding kick-off</label>
+                                    <input type="radio" name="ask" id="keepcoding">
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <label for="colegio">Colegio</label>
+                                    <input type="radio" name="ask" id="colegio">
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <label for="github" class="tag">En Github</label>
+                                    <input type="radio" name="ask" id="github">
+                                    <span></span>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Más información</legend>
+                            <div>
+                                <textarea name="moredetail" id="moredetail" maxlength="180" rows="5"
+                                    placeholder="Qué mas quieres saber"></textarea>
+                            </div>
+                        </fieldset>
+                        <div class="cont-access">
+                            <label for="newsletter">Quiero acceso a la newsletter</label>
+                            <div>
+                                <input type="checkbox" name="newsletter" id="newsletter">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="cont-btn-actions">
+                            <button class="btn btn-secondary" type="submit">Enviar</button>
+                            <button class="btn btn-danger" type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <div class="snap-center">
+            <footer class="relative">
+                <div class="bg-footer"></div>
+                <ul>
+                    <li title="Youtube">
+                        <a href="http://youtube.com" target="_blank" rel="noopener noreferrer">
+                            <iconify-icon icon="akar-icons:youtube-fill"></iconify-icon>
+                        </a>
+                    </li>
+                    <li title="Instagram">
+                        <a href="http://Instagram.com" target="_blank" rel="noopener noreferrer">
+                            <iconify-icon icon="akar-icons:instagram-fill"></iconify-icon>
+                        </a>
+                    </li>
+                    <li title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/jfmoreno0002/" target="_blank" rel="noopener noreferrer">
+                            <iconify-icon icon="akar-icons:linkedin-box-fill"></iconify-icon>
+                        </a>
+                    </li>
+                </ul>
+                <p>Elaborado por Jairo Moreno</p>
+            </footer>
+        </div>
+
+    </main>
+</body>
+
+</html>
