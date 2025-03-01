@@ -1,0 +1,52 @@
+.proyectos{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90vw;
+    margin: 0 auto;
+    > ul{
+        display: grid;
+        grid-template-columns: repeat(2,minmax(100px, 250px));        
+        gap: 1rem;        
+        > li{            
+            > figure{
+                /* display: block; */
+                border-radius: 5px;
+                background-color: var(--primary-color);
+                padding: .4rem;
+                /* overflow: hidden;                 */
+                cursor: pointer;
+                transition: all .3s ease;
+                color: var(--light-color);
+                > img{
+                    display: block;
+                    border-radius: inherit;
+                    width: 100%;                    
+                    aspect-ratio: 16/9;
+                    object-fit: cover;
+                    object-position: top right;                    
+                }
+                &:hover{
+                    overflow: hidden;
+                    transform: scale(1.1);                    
+                }
+                figcaption{
+                    padding: .5rem 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width > 768px) {
+    .proyectos{
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        padding-top: 2rem;
+        > ul{            
+            grid-template-columns: repeat(3,minmax(100px, 350px));
+        }
+    }
+}

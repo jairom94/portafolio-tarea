@@ -72,3 +72,11 @@
         }
     }
 }
+
+@media screen and (width > 768px) {
+    .banner{
+        > .image{
+            background-image: url('../assets/imgs/banner-desktop.jpg');
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.video{
+    height: 100vh;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cont-video{
+        max-width: 80vw;
+        overflow: hidden;
+        .video-youtube {
+            min-width: 300px;
+            width: 60vw;
+            max-width: 600px;   
+            height: 400px; 
+        }
+    }
+}
