@@ -55,17 +55,17 @@
             <nav class="menu">
                 <div class="cont-links">
                     <div class="logo">
-                        <img src="./assets/imgs/txtportafolio.png" alt="">
+                        <img src="./assets/imgs/txtportafolio.png" alt="logo portafolio">
                     </div>
                     <ul>
                         <li>
-                            <a class="btn-menu" href="#">Home</a>
+                            <a class="btn-menu" href="#home">Home</a>
                         </li>
                         <li>
-                            <a class="btn-menu" href="#">About</a>
+                            <a class="btn-menu" href="#about">About</a>
                         </li>
                         <li>
-                            <a class="btn-menu" href="#">Contact</a>
+                            <a class="btn-menu" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -78,11 +78,15 @@
             <section class="home" id="home">
                 <div class="cont-saludo">
                     <h2 class="heading-4">Hola a todos, soy</h2>
-                    <h3 class="heading-2 pt-2">Jairo F.<br>Moreno Jurado</h3>
-                    <div class="cont-btns-bottom-saludo pt-4">
-                        <a class="btn btn-primary" href="#">Desarrollador Web</a>
-                        <a class="btn btn-primary" href="#">Contactame</a>
-                    </div>
+                    <h3 class="heading-2">Jairo F.<br>Moreno Jurado</h3>
+                    <ul class="cont-btns-bottom-saludo">                        
+                            <li>
+                                <a href="" class="btn btn-primary">Desarrollador Web</a>
+                            </li>
+                            <li>
+                                <a href="" class="btn btn-primary">Contactame</a>
+                            </li>                        
+                    </ul>
                 </div>
                 <div class="cont-profile">
                     <div class="profile">
@@ -112,7 +116,7 @@
             </section>
         </div>
         <div class="snap-center">
-            <section class="about">
+            <section class="about" id="about">
                 <div class="header-about">
                     <h2>Hola, soy <br> Jairo Moreno</h2>
                     <div class="cont-img-profile">
@@ -123,68 +127,133 @@
                     <div class="banner-about"></div>
                     <div class="body-about">
                         <p>Desarrollador web Full Stack, me apasiona el diseño web y debido a ello he enfocado mi tiempo
-                            para mejorar mis habilidades técnicas. <strong>Me mantengo en continuo aprendizaje para asi estar a la
-                                altura de las exigencias del cliente aprendiendo nuevas tecnologías y sus metodologías a fondo.</strong>
-                        </p>
-                        <!-- <p>Me comprometo a dar mi mayor esfuezo en cada proyecto y a presentar soluciones innovadoras
-                            con un interfaz amigable para el usuario y facel de manejar.
-                        </p> -->
-                    </div>
-                    <div class="footer-about">
-                        <a href="#">Contactar</a>
-                        <!-- <div class="circle-bottom-left">
-                        </div> -->
-                        <!-- <div class="icon-about">
-                            <iconify-icon icon="tabler:user-filled"></iconify-icon>
-                        </div> -->
-                    </div>
+                            para mejorar mis habilidades técnicas. <strong>Me mantengo en continuo aprendizaje para así éstar a la
+                            altura de las exigencias del cliente aprendiendo nuevas tecnologías y sus metodologías a fondo.</strong>
+                            Mi enfoque se centra en combinar diseño y funcionalidad, utilizando tecnologías modernas para ofrecer 
+                            soluciones web dinámicas y escalables.
+                        </p>                        
+                    </div>                    
                 </div>
                 
             </section>
         </div>
         <div class="snap-center">
-            <section class="skills">
-                <!-- <ul>
-                    <li class="card-skill relative p-4">
-                        <div class="icon-skill">
-                            <iconify-icon icon="akar-icons:react-fill" class="icon-md"></iconify-icon>
+            <section class="skills">  
+                <h2>Habilidades</h2>              
+                <ul>
+                    <li>
+                        <div class="cont-ico-skill">
+                            <iconify-icon icon="akar-icons:react-fill"></iconify-icon>
                         </div>
-                        <h4 class="heading-6 pb-2 pt-4">React JS</h4>
-                        <div class="progressbar">
-                            <div class="cont-progress">
-                                <div class="progress-60">
-                                </div>
+                        <div class="cont-body-skill">
+                            <h3 class="title">React</h3>
+                            <div class="progressbar">                                
+                                <div class="bar charge-90"></div>                                
                             </div>
-                            <span class="percenteje">60%</span>
+                            <div class="percent">
+                                <span>90%</span>
+                            </div>
                         </div>
                     </li>
-                    <li class="card-skill relative p-4">
-                        <div class="icon-skill">
-                            <iconify-icon icon="akar-icons:vue-fill" class="icon-md"></iconify-icon>
+                    <li>
+                        <div class="cont-ico-skill">
+                            <iconify-icon icon="akar-icons:vue-fill"></iconify-icon>
                         </div>
-                        <h4 class="heading-6 pb-2 pt-4">Vue JS</h4>
-                        <div class="progressbar">
-                            <div class="cont-progress">
-                                <div class="progress-80">
-                                </div>
+                        <div class="cont-body-skill">
+                            <h3 class="title">Vue</h3>
+                            <div class="progressbar">                                
+                                <div class="bar charge-80"></div>                                
                             </div>
-                            <span class="percenteje">80%</span>
+                            <div class="percent">
+                                <span>80%</span>
+                            </div>
                         </div>
                     </li>
-                    <li class="card-skill relative p-4">
-                        <div class="icon-skill">
-                            <iconify-icon icon="bi:github" class="icon-md"></iconify-icon>
+                    <li>
+                        <div class="cont-ico-skill">
+                            <iconify-icon icon="akar-icons:javascript-fill"></iconify-icon>
                         </div>
-                        <h4 class="heading-6 pb-2 pt-4">Git, Github y GitLab</h4>
-                        <div class="progressbar">
-                            <div class="cont-progress">
-                                <div class="progress-90">
-                                </div>
+                        <div class="cont-body-skill">
+                            <h3 class="title">Javascript</h3>
+                            <div class="progressbar">                                
+                                <div class="bar charge-90"></div>                                
                             </div>
-                            <span class="percenteje">90%</span>
+                            <div class="percent">
+                                <span>90%</span>
+                            </div>
                         </div>
                     </li>
-                </ul> -->
+                    <li>
+                        <div class="cont-ico-skill">
+                            <iconify-icon icon="akar-icons:node-fill"></iconify-icon>
+                        </div>
+                        <div class="cont-body-skill">
+                            <h3 class="title">Node JS</h3>
+                            <div class="progressbar">                                
+                                <div class="bar charge-60"></div>                                
+                            </div>
+                            <div class="percent">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont-ico-skill">
+                            <iconify-icon icon="akar-icons:html-fill"></iconify-icon>
+                        </div>
+                        <div class="cont-body-skill">
+                            <h3 class="title">Html</h3>
+                            <div class="progressbar">                                
+                                <div class="bar charge-80"></div>                                
+                            </div>
+                            <div class="percent">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont-ico-skill">
+                            <iconify-icon icon="akar-icons:css-fill"></iconify-icon>
+                        </div>
+                        <div class="cont-body-skill">
+                            <h3 class="title">Css</h3>
+                            <div class="progressbar">                                
+                                <div class="bar charge-60"></div>                                
+                            </div>
+                            <div class="percent">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont-ico-skill">
+                            <iconify-icon icon="akar-icons:github-fill"></iconify-icon>
+                        </div>
+                        <div class="cont-body-skill">
+                            <h3 class="title">Github</h3>
+                            <div class="progressbar">                                
+                                <div class="bar charge-90"></div>                                
+                            </div>
+                            <div class="percent">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont-ico-skill">
+                            <iconify-icon icon="akar-icons:python-fill"></iconify-icon>
+                        </div>
+                        <div class="cont-body-skill">
+                            <h3 class="title">Python</h3>
+                            <div class="progressbar">                                
+                                <div class="bar charge-60"></div>                                
+                            </div>
+                            <div class="percent">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </li>                    
+                </ul>
             </section>
         </div>
         <div class="snap-center">
@@ -208,7 +277,7 @@
             </section>
         </div>
         <div class="snap-center">
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="cont-form">
                     <form action="">
                         <div class="cont-input" id="cont-input">

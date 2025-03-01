@@ -1,15 +1,12 @@
-.home{        
-    /* padding-top: 100px; */
+.home{            
     text-align: center;
     letter-spacing: 2px;
-    color: var(--secondary-color);
-    /* background-color: aquamarine; */
+    color: var(--secondary-color);    
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: var(--bg-skills);
+    justify-content: center;    
     gap: 1rem;    
 }
 
@@ -102,7 +99,7 @@
     .cont-btns-bottom-profile{
         display: none;
     }
-    .cont-btns-bottom-saludo{
+    ul.cont-btns-bottom-saludo{
         display: block;
     }
     .home{
@@ -110,18 +107,31 @@
         grid-template-columns: repeat(2,1fr);
         max-width: 850px;
         margin: 0 auto;
-        .cont-saludo{
-            /* background-color: blueviolet; */
+        gap: 0;
+        .cont-saludo{            
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            grid-row: span 1;
+            height: 100%;
+            width: 100%;
+            ul.cont-btns-bottom-saludo{
+                display: flex;
+                gap: 5px;
+                a{                    
+                    display: inline-block;
+                }
+                
+            }
         }
     }
-    .cont-profile{
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
+    .cont-profile{        
         width: fit-content;
+        grid-row: span 1;
+        height: 100%;
+        width: 100%;
     }
     .profile{
         position: relative;    
