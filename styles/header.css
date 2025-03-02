@@ -156,7 +156,7 @@
         display: none;
     }
     .header{
-        right: 0;
+        right: 12px;
     }
     .menu {
         display: block;                
