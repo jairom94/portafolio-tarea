@@ -4,18 +4,10 @@
     
 }
 .header {
-    position: fixed;
-    /* width: 100vw; */
+    position: fixed;    
     z-index: 10;
     top: 0;
     left: 0;
-    /* width: 100%;     */
-    /* background-color: aqua; */
-    width: 98.5%;
-    /* padding-right: 300px; */
-    /* padding: 20px; */
-    /* background-color: aqua; */
-
 }
 
 #menu-checkbox+.menu-btn {
@@ -83,8 +75,8 @@
 
 .menu-hamburguesa {
     display: none;
-    transform: scaleY(0);
-    transform-origin: top;
+    /* transform: scaleY(0); */
+    /* transform-origin: top; */
     transition: transform 0.5s ease;
     /* background-color: blueviolet; */
     position: absolute;
@@ -95,8 +87,11 @@
     height: 100vh;
     z-index: 999;
     ul{
+        /* background-color: yellow; */
         height: 100%;
-        width: 100%;
+        /* width: 100%; */
+        /* background-color: violet; */
+        padding: 0 .5rem;
         border-radius: inherit;
         color: var(--font-color);
         display: flex;
@@ -104,20 +99,27 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-        padding: 0 .8rem;        
+        /* padding: 0 .8rem;         */
         li{
             /* background-color: yellowgreen; */
-            width: 80%;
+            /* width: 80%; */
+            background-color: darkolivegreen;
+            width: 100%;
             height: 3rem;
             display: flex;
             justify-content: center;
             align-items: center;
-            a{
-                /* background-color: aqua; */
-                display: block;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(72, 92, 39);
+            }
+            a{                
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                padding: 0 .5rem;
                 width: 100%;
                 height: 100%;
-                /* text-align: center; */
                 transition: all .3s ease;
                 &:hover{
                     color: var(--bg-skills);
@@ -132,19 +134,19 @@
 
 @keyframes bounce {
     0% {
-        transform: scaleY(0);
+        transform: scaleX(0);
         /* Inicio: menú colapsado */
     }
 
     30%,
     70% {
-        transform: scaleY(1.1);
+        transform: scaleX(1.1);
         /* Rebote: escala al 110% */
     }
 
     50%,
     100% {
-        transform: scaleY(1);
+        transform: scaleX(1);
         /* Final: escala normal */
     }
 }
@@ -153,7 +155,9 @@
     .menu-hamburguesa,#menu-checkbox+.menu-btn {
         display: none;
     }
-
+    .header{
+        width: 98.5%;
+    }
     .menu {
         display: block;                
         background-color: rgba(255, 255, 255, .7);
